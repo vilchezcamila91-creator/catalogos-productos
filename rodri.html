@@ -1,0 +1,232 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="rodri.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="https://blog.zonadesentidos.com/wp-content/uploads/2016/02/logo.jpg"
+             alt="Logo del catálogo"
+             class="logo">
+
+        <h1>Nuestros Productos</h1>
+        <p>Escanea y descubre nuestro catálogo táctil e informativo</p>
+    </header>
+
+    <main class="container">
+
+        <!-- BUSCADOR -->
+<!-- Buscador -->
+<section class="search-section">
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar producto (ej. arroz, fideos)..."
+            oninput="filterProducts()"
+            aria-label="Buscar producto">
+
+        <button
+            type="button"
+            id="voiceButton"
+            onclick="startVoiceSearch()"
+            aria-label="Buscar producto por voz"
+            title="Buscar producto por voz">
+            🎤
+        </button>
+
+    </div>
+
+    <p id="voiceStatus" class="voice-status" aria-live="polite"></p>
+
+</section>
+
+
+
+        <!-- CATÁLOGO DE PRODUCTOS -->
+        <section class="grid-products" id="productGrid" aria-label="Catálogo de productos">
+
+            <!-- ARROZ -->
+            <article class="product-card" onclick="openModal('arroz')">
+
+                <img
+                    src="https://imgs.search.brave.com/QSI2VrNGKgbNN3RqdUEfOj9waT6BD9sPKEwOzmQegMc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzc0NTMzMy1NTEE0/ODQ3NTYzNTU3MF8x/MjIwMjEtVi53ZWJw"
+                    alt="Paquete de arroz">
+
+                <div class="product-info">
+
+                    <h2>Arroz Paquete 1kg</h2>
+
+                    <p class="description">
+                        Arroz largo fino de primera calidad.
+                    </p>
+
+                    <span class="price">$1.800</span>
+
+                </div>
+            </article>
+
+
+            <!-- FIDEOS -->
+            <article class="product-card" onclick="openModal('fideos')">
+
+                <img
+                    src="https://imgs.search.brave.com/yB-1zYSGswSBsEk1l1FB3_1okNHoyGwqU78W_6KHbKY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF85/NDc4MDctTUxBNDY4/OTgxNjA4ODBfMDcy/MDIxLVYud2VicA"
+                    alt="Paquete de fideos tallarines">
+
+                <div class="product-info">
+
+                    <h2>Fideos Tallarines 500g</h2>
+
+                    <p class="description">
+                        Fideos de sémola de trigo candeal.
+                    </p>
+
+                    <span class="price">$1.200</span>
+
+                </div>
+            </article>
+
+
+            <!-- ACEITE -->
+            <article class="product-card" onclick="openModal('aceite')">
+
+                <img
+                    src="https://imgs.search.brave.com/V1gupAqOKJS6BrdELaIOIexUj1b1USMQmKL4L4Qcegg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdXBl/cnRvcGFyLnZ0ZXhh/c3NldHMuY29tL2Fy/cXVpdm9zL2lkcy8x/NTkzMjQtMjI2LTIy/Nj92PTYzODkwNTA5/NDM5MjQ3MDAwMCZ3/aWR0aD0yMjYmaGVp/Z2h0PTIyNiZhc3Bl/Y3Q9dHJ1ZQ"
+                    alt="Botella de aceite de girasol">
+
+                <div class="product-info">
+
+                    <h2>Aceite de Girasol 1.5L</h2>
+
+                    <p class="description">
+                        Aceite vegetal de girasol puro.
+                    </p>
+
+                    <span class="price">$3.000</span>
+
+                </div>
+            </article>
+
+
+            <!-- AZÚCAR -->
+            <article class="product-card" onclick="openModal('azucar')">
+
+                <img
+                    src="https://imgs.search.brave.com/Dmw1EZLkNTwZVVb_eZV74i1iQbNY28n_W94x4j-HC3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vU19RX05QXzJY/Xzc3ODYwMC1NTFU3/MjU2NjI0MjAyMl8x/MTIwMjMtVi53ZWJw"
+                    alt="Paquete de azúcar">
+
+                <div class="product-info">
+
+                    <h2>Azúcar Paquete 1kg</h2>
+
+                    <p class="description">
+                        Azúcar de primera calidad.
+                    </p>
+
+                    <span class="price">$2.000</span>
+
+                </div>
+            </article>
+
+
+            <!-- ALMENDRAS -->
+            <article class="product-card" onclick="openModal('almendra')">
+
+                <img
+                    src="https://imgs.search.brave.com/sR5N-lsiFKY2rqE6GGw0QJ6xjLVX44MIXRifbuFvR2o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFBcnpnak5UMkwu/anBn"
+                    alt="Paquete de almendras">
+
+                <div class="product-info">
+
+                    <h2>Almendras Paquete 500g</h2>
+
+                    <p class="description">
+                        Almendras de primera calidad.
+                    </p>
+
+                    <span class="price">$2.500</span>
+
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL -->
+    <div id="productModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+        <div class="modal-content">
+
+            <button class="close-btn"
+                    onclick="closeModal()"
+                    aria-label="Cerrar información del producto">
+                &times;
+            </button>
+
+            <div class="modal-body">
+
+                <img id="modalImage" src="" alt="Producto">
+
+                <div class="modal-details">
+
+                    <h2 id="modalTitle">Título del Producto</h2>
+
+                    <span class="modal-price" id="modalPrice">$0</span>
+
+                    <p id="modalDescription" class="modal-desc"></p>
+
+                    <div class="extra-info">
+
+                        <h3>Detalles Técnicos:</h3>
+
+                        <ul>
+
+                            <li>
+                                <strong>Ingredientes:</strong>
+                                <span id="modalIngredients"></span>
+                            </li>
+
+                            <li>
+                                <strong>Contenido:</strong>
+                                <span id="modalContent"></span>
+                            </li>
+
+                            <li>
+                                <strong>Conservación:</strong>
+                                <span id="modalStorage"></span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Tu Tienda / Marca</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
