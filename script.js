@@ -7,13 +7,13 @@ DATOS DE LOS PRODUCTOS
 const productsData = {
 
 
-arroz: {
-    title: "Arroz Paquete 1kg",
-    price: "$1.800",
-    image: "https://imgs.search.brave.com/GpII6oqa16OJ-X9y1WUeiD6xn2L6FwlMT6LRYW5HTpw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzYyOTMyMC1NTEE3/Njc2MzI2NTU4Ml8w/NjIwMjQtVi53ZWJw",
-    description: "Arroz largo fino tipo 00000. Seleccionado granos de alta calidad, libre de gluten y con el punto justo de almidón para garantizar cocción uniforme.",
-    ingredients: "100% Granos de arroz pulido libre de TACC.",
-    content: "1000g (1 kg)",
+Alfajores: {
+    title: "Alfajores Ganash 12 unidades",
+    price: "$43.000",
+    image: "https://d22fxaf9t8d39k.cloudfront.net/61ba67459061a89360721120a4d6a03b0ae222d6f5a5a74a2e9937f46a12114832857.png",
+    description: "Alfajor relleno de dulce de leche con corazón de calafate bañado en choco semiamargo",
+    ingredients: "dulce de leche repostero,frutos rojos y bañados en chocolate semi amargo",
+    content: "70gr",
     storage: "Conservar en un lugar fresco, seco y al resguardo de la luz solar directa."
 },
 
@@ -41,24 +41,24 @@ mermelada: {
 
 
 aceite: {
-    title: "Aceite de Girasol 1.5L",
+    title: "Aceite de oliva ",
     price: "$3.000",
-    image: "https://imgs.search.brave.com/V1gupAqOKJS6BrdELaIOIexUj1b1USMQmKL4L4Qcegg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdXBl/cnRvcGFyLnZ0ZXhh/c3NldHMuY29tL2Fy/cXVpdm9zL2lkcy8x/NTkzMjQtMjI2LTIy/Nj92PTYzODkwNTA5/NDM5MjQ3MDAwMCZ3/aWR0aD0yMjYmaGVp/Z2h0PTIyNiZhc3Bl/Y3Q9dHJ1ZQ",
-    description: "Aceite 100% puro de girasol refinado.",
-    ingredients: "100% Aceite de girasol refinado, Vitamina E.",
-    content: "1.5 Litros",
+    image: "https://origenchubut.gob.ar/wp-content/uploads/2024/08/Origen-Chubut-Ketrawe-aceite-de-oliva-5.jpg",
+    description: "Aceite de oliva extra virgen ",
+    ingredients: "100% Aceite de oliva refinado, Vitamina E.",
+    content: "500 centimetros cubicos",
     storage: "Mantener el envase cerrado en un lugar fresco."
 },
 
 
-azucar: {
-    title: "Azúcar Paquete 1kg",
+Alcaparras: {
+    title: "Frasco de Alcaparras de 70g",
     price: "$2.000",
-    image: "https://imgs.search.brave.com/Dmw1EZLkNTwZVVb_eZV74i1iQbNY28n_W94x4j-HC3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vU19RX05QXzJY/Xzc3ODYwMC1NTFU3/MjU2NjI0MjAyMl8x/MTIwMjMtVi53ZWJw",
-    description: "Azúcar blanca de primera calidad.",
-    ingredients: "100% Azúcar de caña.",
-    content: "1000g (1 kg)",
-    storage: "Conservar en un lugar fresco, seco y alejado de la humedad."
+    image: "https://scontent.frel1-1.fna.fbcdn.net/v/t1.6435-9/70756861_103021771093933_7275987646705303552_n.jpg?stp=dst-jpg_tt6&cstp=mx360x360&ctp=s360x360&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=aJkay5QuBJsQ7kNvwEma40T&_nc_oc=AdrYDt88QH2yB096hnE_Efa7d3OBLw7eskeSN7nD1GtzTHXdmtXiUXpO3vQg4jMpk-4&_nc_zt=23&_nc_ht=scontent.frel1-1.fna&_nc_gid=ztel4cUuNQ81Nxq7Mwemyw&_nc_ss=7b2a8&oh=00_AQMd2frixJeVFS1RnMBP4_CfYccvCqXsKsVQKHrN5-4AWQ&oe=6AF8D395",
+    description: "Alcaparras de muy buena calidad",
+    ingredients: "vinagre de alcohol sin tacc",
+    content: "70 Gramos",
+    storage: "Conservar en un lugar fresco."
 },
 
 
